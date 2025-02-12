@@ -1,0 +1,177 @@
+/* General Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+/* Container for Password Generator */
+.container {
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Password Display */
+.display-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #764ba2;
+}
+
+.display {
+    width: 80%;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.display::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copyBtn {
+    background: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.copyBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Input Section */
+.input-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.length-container p {
+    font-size: 1.2rem;
+}
+
+.slider {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    appearance: none;
+    height: 8px;
+    background: #764ba2;
+    border-radius: 5px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.check input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.generateButton {
+    width: 100%;
+    padding: 10px;
+    background: #ff9800;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.generateButton:hover {
+    background: #e68900;
+}
+
+/* Footer with Social Media Links */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffd633;
+}
+
+
+
